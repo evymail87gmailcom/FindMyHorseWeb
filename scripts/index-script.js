@@ -44,7 +44,7 @@ function addMenu() {
 addMenu();
 //var testValue;
 
-
+var t
 function addMain(){
    var main = document.createElement("div");
     main.className = "main"; // assign name for css file
@@ -52,7 +52,7 @@ function addMain(){
     var text = document.createTextNode("status");
    //text.id = "status";
     main.appendChild(text);
-    var t = document.createElement("p");
+    t = document.createElement("p");
     t.id = "status";
     main.appendChild(t);
 }
