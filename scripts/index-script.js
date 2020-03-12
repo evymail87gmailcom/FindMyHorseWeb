@@ -52,12 +52,12 @@ function addMain(){
     document.body.appendChild(main); // add div to body
     var test = document.createTextNode(testVar);
     main.appendChild(test);
-    getDataFromNodeTest();
+   // getDataFromNodeTest();
 
 }
 
 addMain();
-
+addStats();
 
 function addFooter(){
     var footer = document.createElement("div");
@@ -73,12 +73,15 @@ function addStats() {
     var stats = document.createElement("div");
     stats.className = "stats";
     document.body.appendChild(stats);
+   
+
     var text = document.createTextNode("status");
-    stats.appendChild(text + getDataFromNodeTest);
+    text.id = "statustest";
+    //stats.appendChild(text + getDataFromNodeTest);
 }
 
 function getDataFromNodeTest(testVar) {
-
+    
     var blink = document.createTextNode(testVar);
 
     main.appendChild(blink);
