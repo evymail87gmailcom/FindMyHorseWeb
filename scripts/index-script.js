@@ -43,9 +43,9 @@ function addMenu() {
 
 addMenu();
 //var testValue;
-
+var main;
 function addMain(){
-    var main = document.createElement("div");
+    main = document.createElement("div");
     main.className = "main"; // assign name for css file
     document.body.appendChild(main); // add div to body
    
