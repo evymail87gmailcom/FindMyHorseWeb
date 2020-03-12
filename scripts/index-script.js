@@ -50,6 +50,8 @@ function addMain(){
     var text = document.createTextNode("Main div");
     main.appendChild(text);
     document.body.appendChild(main); // add div to body
+    var test = document.createTextNode(testVar);
+    main.appendChild(test);
     getDataFromNodeTest();
 
 }
