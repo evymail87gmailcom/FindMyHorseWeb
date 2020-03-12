@@ -42,7 +42,8 @@ function addMenu() {
 }
 
 addMenu();
-getDataFromNode();
+//getDataFromNode();
+getDataFromNodeTest();
 function addMain(){
     var main = document.createElement("div");
     main.className = "main"; // assign name for css file
