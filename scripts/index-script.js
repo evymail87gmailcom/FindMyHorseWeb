@@ -50,8 +50,9 @@ function addMain(){
     main.className = "main"; // assign name for css file
     document.body.appendChild(main); // add div to body
     text = document.createTextNode("status");
-    text.id = "status";
     main.appendChild(text);
+    text.id = "status";
+
 
 }
 function getDataFromNodeTest(testVar) {
