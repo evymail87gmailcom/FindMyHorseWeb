@@ -42,19 +42,24 @@ function addMenu() {
 }
 
 addMenu();
-//getDataFromNode();
+
 
 function addMain(){
     var main = document.createElement("div");
     main.className = "main"; // assign name for css file
     document.body.appendChild(main); // add div to body
    
-   
+    function getDataFromNodeTest(testVar) {
+
+        var blink = document.createTextNode(testVar);
+
+        main.appendChild(blink);
+    }
 
 }
 
 addMain();
-addStats();
+
 
 function addFooter(){
     var footer = document.createElement("div");
@@ -66,26 +71,12 @@ function addFooter(){
 
 addFooter();
 
-function addStats() {
-    var stats = document.createElement("div");
-    stats.className = "stats";
-    document.body.appendChild(stats);
-   
 
-    var text = document.createTextNode("status");
-    text.id = "statustest";
-    //stats.appendChild(text + getDataFromNodeTest);
-}
 
-function getDataFromNodeTest(testVar) {
-    
-    var blink = document.createTextNode(testVar);
 
-    main.appendChild(blink);
-}
 
 function getDataFromNode(numberOfSteps,soundLevel,distanceToObject,gasValues) {
-   // addStats();
+
     var steps = document.createTextNode(numberOfSteps);
     var sound = document.createTextNode(soundLevel);
     var distance = document.createTextNode(distanceToObject);
