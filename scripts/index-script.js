@@ -42,7 +42,7 @@ function addMenu() {
 }
 
 addMenu();
-
+//var testValue;
 
 function addMain(){
     var main = document.createElement("div");
@@ -52,8 +52,8 @@ function addMain(){
     function getDataFromNodeTest(testVar) {
 
         
-
-        main.appendChild(testVar);
+      
+        main.appendChild(document.createTextNode(testVar));
     }
 
 }
