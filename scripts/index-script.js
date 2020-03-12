@@ -43,13 +43,15 @@ function addMenu() {
 
 addMenu();
 //getDataFromNode();
-getDataFromNodeTest();
+
 function addMain(){
     var main = document.createElement("div");
     main.className = "main"; // assign name for css file
     var text = document.createTextNode("Main div");
     main.appendChild(text);
     document.body.appendChild(main); // add div to body
+    getDataFromNodeTest();
+
 }
 
 addMain();
@@ -70,7 +72,7 @@ function addStats() {
     stats.className = "stats";
     document.body.appendChild(stats);
     var text = document.createTextNode("status");
-    stats.appendChild(text);
+    stats.appendChild(text + getDataFromNodeTest);
 }
 
 function getDataFromNodeTest(testVar) {
@@ -81,7 +83,7 @@ function getDataFromNodeTest(testVar) {
 }
 
 function getDataFromNode(numberOfSteps,soundLevel,distanceToObject,gasValues) {
-    addStats();
+   // addStats();
     var steps = document.createTextNode(numberOfSteps);
     var sound = document.createTextNode(soundLevel);
     var distance = document.createTextNode(distanceToObject);
