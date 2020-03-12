@@ -55,12 +55,12 @@ function addMain(){
 
 }
 function getDataFromNodeTest(testVar) {
+    addMain();
 
-
-
-    main.appendChild(document.createTextNode("testVar"));
+    var t = testVar;
+    main.appendChild(document.createTextNode(t));
 }
-addMain();
+
 
 
 function addFooter(){
@@ -78,10 +78,10 @@ addFooter();
 
 
 function getDataFromNode(numberOfSteps,soundLevel,distanceToObject,gasValues) {
-
+    addMain();
     var steps = document.createTextNode(numberOfSteps);
     var sound = document.createTextNode(soundLevel);
     var distance = document.createTextNode(distanceToObject);
     var gas = document.createTextNode(gasValues);
-    stats.appendChild(steps, sound, distance, gas);
+    main.appendChild(steps, sound, distance, gas);
 }
