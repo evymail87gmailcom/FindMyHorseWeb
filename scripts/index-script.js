@@ -51,9 +51,9 @@ function addMain(){
    
     function getDataFromNodeTest(testVar) {
 
-        var blink = document.createTextNode(testVar);
+        
 
-        main.appendChild(blink);
+        main.appendChild(testVar);
     }
 
 }
