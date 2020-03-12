@@ -54,7 +54,7 @@ function addMain(){
     main.appendChild(text);
 
 }
-function getDataFromNodeTest(test) {
+function getDataFromNodeTest() {
     addMain();
 
     document.getElementById("status").innerHTML = test;
