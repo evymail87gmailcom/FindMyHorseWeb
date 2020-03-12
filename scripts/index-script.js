@@ -44,11 +44,13 @@ function addMenu() {
 addMenu();
 //var testValue;
 var main;
+var text
 function addMain(){
     main = document.createElement("div");
     main.className = "main"; // assign name for css file
     document.body.appendChild(main); // add div to body
-   
+    text = document.createTextNode("status");
+    text.id = "status";
  
 
 }
@@ -56,7 +58,7 @@ function getDataFromNodeTest(testVar) {
 
 
 
-    main.appendChild(document.createTextNode(testVar));
+    main.appendChild(document.createTextNode("testVar"));
 }
 addMain();
 
