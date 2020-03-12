@@ -51,7 +51,7 @@ function addMain(){
     document.body.appendChild(main); // add div to body
     text = document.createTextNode("status");
     text.id = "status";
- 
+    main.appendChild(text);
 
 }
 function getDataFromNodeTest(testVar) {
