@@ -43,21 +43,22 @@ function addMenu() {
 
 addMenu();
 //var testValue;
-var main;
-var text
+
+
 function addMain(){
-    main = document.createElement("div");
+   var main = document.createElement("div");
     main.className = "main"; // assign name for css file
     document.body.appendChild(main); // add div to body
-    text = document.createTextNode("status");
+    var text = document.createTextNode("status");
    text.id = "status";
     main.appendChild(text);
 
 }
-function getDataFromNodeTest(test) {
-    addMain();
+addMain();
+function getDataFromNodeTest(tests) {
+    
 
-    document.getElementById("status").innerHTML = test;
+    document.getElementById("status").innerHTML = tests;
    // main.appendChild(document.createTextNode(t));
 }
 
