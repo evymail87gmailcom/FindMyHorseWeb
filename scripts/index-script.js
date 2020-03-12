@@ -73,9 +73,9 @@ function addStats() {
     stats.appendChild(text);
 }
 
-function getDataFromNodeTest(blinkTest) {
+function getDataFromNodeTest(testVar) {
 
-    var blink = document.createTextNode(blinkTest);
+    var blink = document.createTextNode(testVar);
 
     main.appendChild(blink);
 }
