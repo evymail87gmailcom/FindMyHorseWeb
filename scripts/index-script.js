@@ -49,15 +49,15 @@ function addMain(){
     main.className = "main"; // assign name for css file
     document.body.appendChild(main); // add div to body
    
-    function getDataFromNodeTest(testVar) {
-
-        
-      
-        main.appendChild(document.createTextNode(testVar));
-    }
+ 
 
 }
+function getDataFromNodeTest(testVar) {
 
+
+
+    main.appendChild(document.createTextNode(testVar));
+}
 addMain();
 
 
