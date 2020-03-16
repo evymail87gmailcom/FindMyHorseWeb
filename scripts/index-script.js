@@ -59,7 +59,7 @@ function addMain(){
     distance.id = "distance";
     main.appendChild(distance);
     var steps = document.createElement("p");
-    steps.id = "distance";
+    steps.id = "steps";
     main.appendChild(steps);
     var sound = document.createElement("p");
     sound.id = "sound";
