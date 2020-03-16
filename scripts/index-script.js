@@ -55,7 +55,7 @@ function addMain(){
     var dateTime = document.createElement("p");
     dateTime.id = "dateTime";
     main.appendChild(dateTime);
-    var br = document.createElement("br");
+    var br = document.createElement("BR");
     main.appendChild(br);
     var distance = document.createElement("p");
     distance.id = "distance";
