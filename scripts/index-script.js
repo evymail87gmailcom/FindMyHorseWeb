@@ -52,26 +52,28 @@ function addMain(){
     var text = document.createTextNode("status");
     main.appendChild(text);
 
-    var dateTime = document.createElement("span");
+    var dateTime = document.createElement("p");
     dateTime.id = "dateTime";
     main.appendChild(dateTime);
-    var distance = document.createElement("span");
+    dateTime.style.clear = "left";
+    var distance = document.createElement("p");
     distance.id = "distance";
     main.appendChild(distance);
-    var steps = document.createElement("span");
+    distance.style.clear = "left";
+    var steps = document.createElement("p");
     steps.id = "steps";
     main.appendChild(steps);
-    var sound = document.createElement("span");
+    var sound = document.createElement("p");
     sound.id = "sound";
     main.appendChild(sound);
-    var horsePower = document.createElement("span");
+    var horsePower = document.createElement("p");
     horsePower.id = "horsePower";
     main.appendChild(horsePower);
-    var gas = document.createElement("span");
+    var gas = document.createElement("p");
     gas.id = "gas";
     main.appendChild(gas);
 
-    addLineBreak();
+   // addLineBreak();
 }
 function addLineBreak() {
     document.getElementById("main");
