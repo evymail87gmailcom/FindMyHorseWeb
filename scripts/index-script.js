@@ -74,7 +74,7 @@ function addMain(){
     addLineBreak();
 }
 function addLineBreak() {
-   // document.getElementById("main");
+    document.getElementById("main");
     var spans=main.getElementByTagName("span");
     var i;
     for (i = 1; i < spans.length; i++) {
