@@ -73,7 +73,7 @@ li a:hover{
 
 .main{
     background-color: rgba(153, 125, 107, 0.322);
-    color:rgba(255, 255, 255, 0.95);
+    color:black;
     letter-spacing: 0.2rem;
     overflow-wrap: break-word;
     position: relative;

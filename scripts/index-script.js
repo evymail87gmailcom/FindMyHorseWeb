@@ -44,17 +44,34 @@ function addMenu() {
 addMenu();
 //var testValue;
 
-var t
+
 function addMain(){
    var main = document.createElement("div");
     main.className = "main"; // assign name for css file
     document.body.appendChild(main); // add div to body
     var text = document.createTextNode("status");
-   //text.id = "status";
     main.appendChild(text);
-    t = document.createElement("p");
-    t.id = "status";
-    main.appendChild(t);
+
+    var dateTime = document.createElement("p");
+    dateTime.id = "dateTime";
+    main.appendChild(dateTime);
+    var distance = document.createElement("p");
+    distance.id = "distance";
+    main.appendChild(distance);
+    var steps = document.createElement("p");
+    steps.id = "distance";
+    main.appendChild(steps);
+    var sound = document.createElement("p");
+    sound.id = "sound";
+    main.appendChild(sound);
+    var horsePower = document.createElement("p");
+    horsePower.id = "horsePower";
+    main.appendChild(horsePower);
+    var gas = document.createElement("p");
+    gas.id = "gas";
+    main.appendChild(gas);
+
+
 }
 addMain();
 function getDataFromNodeTest(tests) {
@@ -80,11 +97,11 @@ addFooter();
 
 
 
-function getDataFromNode(numberOfSteps,soundLevel,distanceToObject,gasValues) {
-    addMain();
-    var steps = document.createTextNode(numberOfSteps);
-    var sound = document.createTextNode(soundLevel);
-    var distance = document.createTextNode(distanceToObject);
-    var gas = document.createTextNode(gasValues);
-    main.appendChild(steps, sound, distance, gas);
+function getDataFromNode(dateTime,distance,steps,sound,horsePower,gas) {
+    document.getElementById("dateTime").innerHTML = dateTime;
+    document.getElementById("distance").innerHTML = distance;
+    document.getElementById("steps").innerHTML = steps;
+    document.getElementById("sound").innerHTML = sound;
+    document.getElementById("horsepower").innerHTML = horsePower;
+    document.getElementById("gas").innerHTML = gas;
 }
