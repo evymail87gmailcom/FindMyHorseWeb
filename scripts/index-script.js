@@ -102,6 +102,6 @@ function getDataFromNode(dateTime,distance,steps,sound,horsePower,gas) {
     document.getElementById("distance").innerHTML = distance;
     document.getElementById("steps").innerHTML = steps;
     document.getElementById("sound").innerHTML = sound;
-    document.getElementById("horsepower").innerHTML = horsePower;
+    document.getElementById("horsePower").innerHTML = horsePower;
     document.getElementById("gas").innerHTML = gas;
 }
